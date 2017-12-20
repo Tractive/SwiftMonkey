@@ -64,6 +64,7 @@ public class Monkey {
 
     var r: Random
     let frame: CGRect
+    public let seed: UInt32
 
     var randomActions: [(accumulatedWeight: Double, action: ActionClosure)]
     var totalWeight: Double
@@ -134,6 +135,7 @@ public class Monkey {
         self.randomActions = []
         self.totalWeight = 0
         self.regularActions = []
+        self.seed = seed
     }
 
     /**
